@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan AI Customer Service - AgentKu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ai_chatbot.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="header__logo">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                AgentKu
+            </a>
+            <input type="checkbox" id="menu-toggle" class="header__menu-toggle">
+            <label for="menu-toggle" class="header__hamburger">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="landingpage.html" class="nav__link">Website & Landing page</a></li>
+                    <li><a href="ai_chatbot.html" class="nav__link">Ai Customer Service</a></li>
+                    <li><a href="ai_assistant.html" class="nav__link">Ai Assistant</a></li>
+                </ul>
+                <a href="https://wa.me/62895320460482" class="btn btn--primary">Hubungi Kami</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container">
+                <div class="reveal">
+                    <div class="hero__badge">💬 AI Customer Service</div>
+                    <h1 class="hero__title">Tingkatkan Penjualan & Layani Pelanggan <span>24/7 Tanpa Henti</span></h1>
+                    <p class="hero__desc">Customer Service AI yang cerdas, ramah, dan siap menjawab ribuan chat pelanggan Anda secara bersamaan, siang dan malam.</p>
+                    <div class="hero__actions">
+                        <a href="https://wa.me/62895320460482?text=Halo%20Admin%20AgentKu,%20saya%20tertarik%20dengan%20layanan%20AI%20Customer%20Service.%20Bisa%20minta%20info%20paketnya?" class="btn btn--teal" target="_blank">💬 Pesan AI Customer Service</a>
+                        <a href="index.html" class="btn btn--primary">← Kembali ke Beranda</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS -->
+        <section class="stats-strip">
+            <div class="container">
+                <div class="stats-strip__inner reveal">
+                    <div class="stat-item">
+                        <h3>24/7</h3>
+                        <p>Beroperasi Tanpa Henti</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>&lt;1s</h3>
+                        <p>Waktu Respons</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>∞</h3>
+                        <p>Chat Bersamaan</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>0</h3>
+                        <p>Hari Libur</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DEMO CHAT -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-header__subtitle">• Demo Percakapan</span>
+                    <h2 class="section-header__title">Lihat AI Bekerja</h2>
+                </div>
+                <div class="chat-demo reveal">
+                    <div class="chat-header">
+                        <div class="chat-avatar">AI</div>
+                        <div class="chat-info">
+                            <h4>Della – CS Virtual</h4>
+                            <div class="chat-online">
+                                <div class="chat-online-dot"></div>
+                                <p>Online sekarang</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-messages">
+                        <div class="msg msg--bot">
+                            <div class="msg__bubble">Halo! 👋 Saya Della, Customer Service dari Toko Anda. Ada yang bisa saya bantu hari ini?</div>
+                            <div class="msg__time">09:00</div>
+                        </div>
+                        <div class="msg msg--user">
+                            <div class="msg__bubble">Harga laptop gaming berapa ya?</div>
+                            <div class="msg__time">09:01</div>
+                        </div>
+                        <div class="msg msg--bot">
+                            <div class="msg__bubble">Tentu! Untuk laptop gaming, kami punya pilihan mulai dari Rp 8 juta sampai Rp 25 juta. Budget Kakak sekitar berapa? Biar saya rekomendasikan yang paling pas 😊</div>
+                            <div class="msg__time">09:01</div>
+                        </div>
+                        <div class="msg msg--user">
+                            <div class="msg__bubble">Sekitar 12 juta</div>
+                            <div class="msg__time">09:02</div>
+                        </div>
+                        <div class="msg msg--bot">
+                            <div class="msg__bubble">Di budget Rp 12 juta, saya rekomendasikan ASUS TUF Gaming A15 — performa bagus, baterai tahan lama. Mau saya kirimkan detail spesifikasinya? 🎮</div>
+                            <div class="msg__time">09:02</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PACKAGES -->
+        <section class="section-padding" style="background: var(--bg-card); border-top: var(--border-card); border-bottom: var(--border-card);">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-header__subtitle">• Pilihan Paket</span>
+                    <h2 class="section-header__title">Pilih Paket yang Sesuai</h2>
+                </div>
+                <div class="packages__grid">
+
+                    <!-- Paket Hemat -->
+                    <div class="package-card reveal" style="transition-delay:0s">
+                        <div class="package-icon">📦</div>
+                        <h3 class="package-name">Paket Hemat</h3>
+                        <p class="package-desc">Cocok untuk UMKM yang baru memulai otomatisasi dan ingin menjajal kekuatan AI.</p>
+                        <ul class="feature-list">
+                            <li class="feature-item">
+                                <div class="feature-item__check"><svg viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3"></polyline></svg></div>
+                                <span><strong>Balasan otomatis 24/7</strong> tanpa delay</span>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-item__check"><svg viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3"></polyline></svg></div>
+                                <span>Mampu menjawab <strong>FAQ</strong> seputar bisnis Anda</span>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-item__check"><svg viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3"></polyline></svg></div>
+                                <span>Terhubung langsung ke <strong>nomor WhatsApp</strong> bisnis</span>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-item__check"><svg viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3"></polyline></svg></div>
+                                <span>Gaya bahasa <strong>standar & profesional</strong></span>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-item__check"><svg viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3"></polyline></svg></div>
+                                <span>Mengarahkan pelanggan ke <strong>link pembelian</strong></span>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/62895320460482?text=Halo%20Admin%20AgentKu,%20saya%20tertarik%20dengan%20layanan%20AI%20Customer%20Service.%20Bisa%20minta%20info%20paketnya?" class="btn btn--primary package-cta" target="_blank">Pesan Paket Hemat</a>
+                    </div>
+
+                    <!-- Paket Standar -->
+                    <div class="package-card featured reveal" style="transition-delay:0.15s">
+                        <div class="package-badge">🔥 Paling Laris</div>
+                        <div class="package-icon">🚀</div>
+                        <h3 class="package-name">Paket Standar</h3>
+                        <p class="package-desc">Customer Service AI tingkat lanjut dengan ingatan cerdas — terasa seperti ngobrol dengan manusia sungguhan.</p>
+                        <ul class="feature-list">
+                            <li class="feature-item">
+                                <div class="feature-item__check"><svg viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3"></polyline></svg></div>
+                                <span>Semua fitur <strong>Paket Hemat</strong>, plus:</span>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-item__check"><svg viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3"></polyline></svg></div>
+                                <span><strong>AI Memory Context:</strong> AI mengingat riwayat obrolan agar percakapan terasa natural</span>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-item__check"><svg viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3"></polyline></svg></div>
+                                <span>Gaya bahasa <strong>bisa di-custom</strong> (ramah, gaul, atau formal)</span>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-item__check"><svg viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3"></polyline></svg></div>
+                                <span><strong>Integrasi Katalog Produk:</strong> AI merekomendasikan produk sesuai permintaan pelanggan</span>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-item__check"><svg viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3"></polyline></svg></div>
+                                <span><strong>Handover ke Manusia:</strong> Komplain berat langsung dialihkan ke admin asli</span>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/62895320460482?text=Halo%20Admin%20AgentKu,%20saya%20tertarik%20dengan%20layanan%20AI%20Customer%20Service.%20Bisa%20minta%20info%20paketnya?" class="btn btn--teal package-cta" target="_blank">Pesan Paket Standar</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-header__subtitle">• Cara Kerja</span>
+                    <h2 class="section-header__title">Mudah Dipasang, Langsung Jalan</h2>
+                </div>
+                <div class="how-grid">
+                    <div class="how-card reveal" style="transition-delay:0s">
+                        <div class="how-num">01</div>
+                        <div class="how-content">
+                            <h4>Konsultasi Kebutuhan</h4>
+                            <p>Kami pelajari bisnis Anda — produk, FAQ, dan gaya komunikasi yang diinginkan.</p>
+                        </div>
+                    </div>
+                    <div class="how-card reveal" style="transition-delay:0.1s">
+                        <div class="how-num">02</div>
+                        <div class="how-content">
+                            <h4>Konfigurasi AI</h4>
+                            <p>AI dilatih dengan data produk dan SOP bisnis Anda agar responnya tepat sasaran.</p>
+                        </div>
+                    </div>
+                    <div class="how-card reveal" style="transition-delay:0.2s">
+                        <div class="how-num">03</div>
+                        <div class="how-content">
+                            <h4>Integrasi WhatsApp</h4>
+                            <p>AI dihubungkan ke nomor WhatsApp bisnis Anda — proses setup biasanya kurang dari 1 hari.</p>
+                        </div>
+                    </div>
+                    <div class="how-card reveal" style="transition-delay:0.3s">
+                        <div class="how-num">04</div>
+                        <div class="how-content">
+                            <h4>Langsung Beroperasi</h4>
+                            <p>AI siap melayani pelanggan 24 jam. Anda bisa monitoring dari dashboard kapan saja.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section section-padding">
+            <div class="container">
+                <div class="cta__inner reveal">
+                    <h2 class="cta__title">Siap memiliki karyawan yang <span class="text-highlight">tidak pernah tidur?</span></h2>
+                    <p class="cta__subtitle">Konsultasi pertama gratis — pilih paket yang sesuai bisnis Anda</p>
+                    <a href="https://wa.me/62895320460482?text=Halo%20Admin%20AgentKu,%20saya%20tertarik%20dengan%20layanan%20AI%20Customer%20Service.%20Bisa%20minta%20info%20paketnya?" class="btn btn--teal" target="_blank" style="font-size: 1.1rem; padding: 1rem 2.5rem;">💬 Pesan AI Customer Service</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="reveal">
+                <div class="footer__logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    AgentKu
+                </div>
+                <p>Kami menghadirkan karyawan virtual berbasis AI yang siap beroperasi 24 jam penuh.</p>
+            </div>
+            <div class="footer__links reveal" style="transition-delay:0.1s">
+                <h4>Layanan Kami</h4>
+                <ul>
+                    <li><a href="landingpage.html">Website & Landing Page</a></li>
+                    <li><a href="ai_chatbot.html">AI Customer Service</a></li>
+                    <li><a href="ai_assistant.html">AI Assistant</a></li>
+                </ul>
+            </div>
+            <div class="footer__contact reveal" style="transition-delay:0.2s">
+                <h4>Kontak</h4>
+                <p><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Jln Trans Kalimantan</p>
+                <p><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> (+62) 895 3204 60482</p>
+                <p><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> winsenluis@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer__bottom container">
+            <p>&copy; 2026 AgentKu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+            });
+        }, { threshold: 0.1 });
+        reveals.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

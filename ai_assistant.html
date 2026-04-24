@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan AI Assistant - AgentKu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ai_assistant.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="header__logo">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                AgentKu
+            </a>
+            <input type="checkbox" id="menu-toggle" class="header__menu-toggle">
+            <label for="menu-toggle" class="header__hamburger">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="landingpage.html" class="nav__link">Website & Landing page</a></li>
+                    <li><a href="ai_chatbot.html" class="nav__link">Ai Customer Service</a></li>
+                    <li><a href="ai_assistant.html" class="nav__link">Ai Assistant</a></li>
+                </ul>
+                <a href="https://wa.me/62895320460482" class="btn btn--primary">Hubungi Kami</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container">
+                <div class="reveal">
+                    <div class="hero__badge">🤖 AI Assistant</div>
+                    <h1 class="hero__title">Otomatisasi Bisnis Tingkat Lanjut dengan <span>AI Assistant</span></h1>
+                    <p class="hero__desc">Biarkan robot pintar menangani tugas-tugas repetitif dan membosankan, sehingga Anda bisa fokus pada ekspansi bisnis.</p>
+                    <div class="hero__actions">
+                        <a href="https://wa.me/62895320460482?text=Halo%20Admin%20AgentKu,%20saya%20tertarik%20untuk%20mengotomatisasi%20bisnis%20saya%20dengan%20AI%20Assistant.%20Bisa%20konsultasi?" class="btn btn--teal" target="_blank">💬 Hubungi Tim Kami</a>
+                        <a href="index.html" class="btn btn--primary">← Kembali ke Beranda</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TIME SAVED -->
+        <section class="section-padding" style="background: var(--bg-card); border-top: var(--border-card); border-bottom: var(--border-card);">
+            <div class="container">
+                <div class="time-banner reveal">
+                    <h3>200+ Jam/Bulan</h3>
+                    <p>waktu operasional yang bisa Anda hemat dengan mengotomatisasi tugas berulang</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- USE CASES -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-header__subtitle">• Apa yang Bisa Diotomatisasi</span>
+                    <h2 class="section-header__title">Tugas yang AI Kerjakan untuk Anda</h2>
+                </div>
+                <div class="usecases__grid">
+                    <div class="usecase-card reveal" style="transition-delay:0s">
+                        <div class="usecase-icon">📊</div>
+                        <div class="usecase-content">
+                            <h4>Input Data Otomatis</h4>
+                            <p>Data dari pesan/form pelanggan langsung masuk ke Google Sheets tanpa diketik manual.</p>
+                        </div>
+                    </div>
+                    <div class="usecase-card reveal" style="transition-delay:0.08s">
+                        <div class="usecase-icon">🔔</div>
+                        <div class="usecase-content">
+                            <h4>Notifikasi Pesanan</h4>
+                            <p>Admin langsung dapat peringatan WhatsApp setiap ada pesanan atau permintaan baru masuk.</p>
+                        </div>
+                    </div>
+                    <div class="usecase-card reveal" style="transition-delay:0.16s">
+                        <div class="usecase-icon">✉️</div>
+                        <div class="usecase-content">
+                            <h4>Draf Email Bisnis</h4>
+                            <p>AI membuat balasan email profesional secara otomatis berdasarkan konteks pesan yang masuk.</p>
+                        </div>
+                    </div>
+                    <div class="usecase-card reveal" style="transition-delay:0.24s">
+                        <div class="usecase-icon">📱</div>
+                        <div class="usecase-content">
+                            <h4>Caption Media Sosial</h4>
+                            <p>AI menulis konten dan caption untuk posting media sosial bisnis Anda secara otomatis.</p>
+                        </div>
+                    </div>
+                    <div class="usecase-card reveal" style="transition-delay:0.32s">
+                        <div class="usecase-icon">🗓️</div>
+                        <div class="usecase-content">
+                            <h4>Manajemen Jadwal</h4>
+                            <p>Janji temu dan pengingat terkirim otomatis ke pelanggan dan tim internal Anda.</p>
+                        </div>
+                    </div>
+                    <div class="usecase-card reveal" style="transition-delay:0.4s">
+                        <div class="usecase-icon">🔗</div>
+                        <div class="usecase-content">
+                            <h4>Sinkronisasi Multi-Platform</h4>
+                            <p>Data dari WhatsApp, email, dan website tersinkronisasi secara real-time ke satu dashboard.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORKFLOW VIZ -->
+        <section class="section-padding" style="background: var(--bg-card); border-top: var(--border-card); border-bottom: var(--border-card);">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-header__subtitle">• Contoh Alur Otomatisasi</span>
+                    <h2 class="section-header__title">Bagaimana Sistem Bekerja</h2>
+                </div>
+                <div class="workflow reveal">
+                    <div class="workflow-step">
+                        <div class="workflow-step__icon">💬</div>
+                        <div class="workflow-step__text">
+                            <h4>Pelanggan Kirim Pesan</h4>
+                            <p>Pesan masuk ke WhatsApp bisnis Anda</p>
+                        </div>
+                    </div>
+                    <div class="workflow-arrow">↓</div>
+                    <div class="workflow-step">
+                        <div class="workflow-step__icon">🤖</div>
+                        <div class="workflow-step__text">
+                            <h4>AI Memproses Data</h4>
+                            <p>AI membaca, menganalisis, dan mengekstrak informasi penting</p>
+                        </div>
+                    </div>
+                    <div class="workflow-arrow">↓</div>
+                    <div class="workflow-step">
+                        <div class="workflow-step__icon">📊</div>
+                        <div class="workflow-step__text">
+                            <h4>Data Tersimpan Otomatis</h4>
+                            <p>Informasi pelanggan masuk ke Google Sheets secara langsung</p>
+                        </div>
+                    </div>
+                    <div class="workflow-arrow">↓</div>
+                    <div class="workflow-step">
+                        <div class="workflow-step__icon">🔔</div>
+                        <div class="workflow-step__text">
+                            <h4>Admin Dapat Notifikasi</h4>
+                            <p>Peringatan dikirim ke WhatsApp admin secara real-time</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PACKAGES -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-header__subtitle">• Pilihan Paket</span>
+                    <h2 class="section-header__title">Pilih Paket yang Sesuai</h2>
+                </div>
+                <div class="packages__grid">
+
+                    <!-- Paket Biasa -->
+                    <div class="package-card reveal" style="transition-delay:0s">
+                        <div class="package-icon">⚙️</div>
+                        <h3 class="package-name">Paket Biasa</h3>
+                        <p class="package-desc">Otomatisasi dasar untuk menghemat waktu harian dan mengurangi pekerjaan manual berulang.</p>
+                        <ul class="feature-list">
+                            <li class="feature-item">
+                                <div class="feature-item__check"><svg viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3"></polyline></svg></div>
+                                <span><strong>1 Alur Otomatisasi (Workflow)</strong> pilihan sesuai kebutuhan</span>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-item__check"><svg viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3"></polyline></svg></div>
+                                <span><strong>Otomatisasi Input Data:</strong> Data pelanggan dari pesan/form masuk ke Google Sheets otomatis</span>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-item__check"><svg viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3"></polyline></svg></div>
+                                <span><strong>Otomatisasi Notifikasi:</strong> Peringatan ke WhatsApp admin saat ada pesanan baru</span>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-item__check"><svg viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3"></polyline></svg></div>
+                                <span><strong>Setup sistem satu kali jadi</strong> — langsung bisa digunakan</span>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/62895320460482?text=Halo%20Admin%20AgentKu,%20saya%20tertarik%20untuk%20mengotomatisasi%20bisnis%20saya%20dengan%20AI%20Assistant.%20Bisa%20konsultasi?" class="btn btn--primary package-cta" target="_blank">Mulai dengan Paket Biasa</a>
+                    </div>
+
+                    <!-- Paket Pro -->
+                    <div class="package-card featured reveal" style="transition-delay:0.15s">
+                        <div class="package-badge">💎 Terbaik</div>
+                        <div class="package-icon">💎</div>
+                        <h3 class="package-name">Paket Pro</h3>
+                        <p class="package-desc">Sistem cerdas terintegrasi untuk perusahaan yang sedang berkembang dan butuh otomatisasi menyeluruh.</p>
+                        <ul class="feature-list">
+                            <li class="feature-item">
+                                <div class="feature-item__check"><svg viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3"></polyline></svg></div>
+                                <span>Semua fitur <strong>Paket Biasa</strong>, plus:</span>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-item__check"><svg viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3"></polyline></svg></div>
+                                <span>Hingga <strong>3 Alur Otomatisasi (Workflow) kompleks</strong> sekaligus</span>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-item__check"><svg viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3"></polyline></svg></div>
+                                <span><strong>Asisten AI Penulis:</strong> Otomatis buat draf balasan email bisnis & caption media sosial</span>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-item__check"><svg viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3"></polyline></svg></div>
+                                <span><strong>Integrasi Multi-Platform:</strong> Hubungkan WhatsApp, Email, Google Workspace & Website sekaligus</span>
+                            </li>
+                            <li class="feature-item">
+                                <div class="feature-item__check"><svg viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3"></polyline></svg></div>
+                                <span><strong>Maintenance & pengawasan sistem</strong> secara rutin oleh tim kami</span>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/62895320460482?text=Halo%20Admin%20AgentKu,%20saya%20tertarik%20untuk%20mengotomatisasi%20bisnis%20saya%20dengan%20AI%20Assistant.%20Bisa%20konsultasi?" class="btn btn--teal package-cta" target="_blank">Mulai dengan Paket Pro</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- INTEGRATIONS -->
+        <section class="section-padding" style="background: var(--bg-card); border-top: var(--border-card); border-bottom: var(--border-card);">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-header__subtitle">• Integrasi Platform</span>
+                    <h2 class="section-header__title">Terhubung dengan Tools yang Anda Pakai</h2>
+                </div>
+                <div class="integrations__grid reveal">
+                    <div class="integration-badge"><span>💬</span> WhatsApp</div>
+                    <div class="integration-badge"><span>📧</span> Gmail</div>
+                    <div class="integration-badge"><span>📊</span> Google Sheets</div>
+                    <div class="integration-badge"><span>📁</span> Google Drive</div>
+                    <div class="integration-badge"><span>📅</span> Google Calendar</div>
+                    <div class="integration-badge"><span>🌐</span> Website Anda</div>
+                    <div class="integration-badge"><span>📸</span> Instagram</div>
+                    <div class="integration-badge"><span>🛒</span> Tokopedia / Shopee</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section section-padding">
+            <div class="container">
+                <div class="cta__inner reveal">
+                    <h2 class="cta__title">Otomatiskan bisnis Anda sekarang dan <span class="text-highlight">hemat ratusan jam kerja.</span></h2>
+                    <p class="cta__subtitle">Konsultasi pertama gratis — kami bantu analisis mana proses yang bisa diotomatisasi</p>
+                    <a href="https://wa.me/62895320460482?text=Halo%20Admin%20AgentKu,%20saya%20tertarik%20untuk%20mengotomatisasi%20bisnis%20saya%20dengan%20AI%20Assistant.%20Bisa%20konsultasi?" class="btn btn--teal" target="_blank" style="font-size: 1.1rem; padding: 1rem 2.5rem;">💬 Hubungi Tim Kami</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="reveal">
+                <div class="footer__logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    AgentKu
+                </div>
+                <p>Kami menghadirkan karyawan virtual berbasis AI yang siap beroperasi 24 jam penuh.</p>
+            </div>
+            <div class="footer__links reveal" style="transition-delay:0.1s">
+                <h4>Layanan Kami</h4>
+                <ul>
+                    <li><a href="landingpage.html">Website & Landing Page</a></li>
+                    <li><a href="ai_chatbot.html">AI Customer Service</a></li>
+                    <li><a href="ai_assistant.html">AI Assistant</a></li>
+                </ul>
+            </div>
+            <div class="footer__contact reveal" style="transition-delay:0.2s">
+                <h4>Kontak</h4>
+                <p><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Jln Trans Kalimantan</p>
+                <p><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> (+62) 895 3204 60482</p>
+                <p><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> winsenluis@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer__bottom container">
+            <p>&copy; 2026 AgentKu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+            });
+        }, { threshold: 0.1 });
+        reveals.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
