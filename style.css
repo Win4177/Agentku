@@ -1,3 +1,4 @@
+
         :root {
             --color-primary: #0db7a1;
             --color-primary-hover: #0a9b88;
@@ -16,17 +17,17 @@
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             --radius: 16px;
         }
-
+ 
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
         body { font-family: var(--font-family); color: var(--text-main); background-color: var(--bg-main); line-height: 1.6; }
         img { max-width: 100%; height: auto; display: block; }
         a { text-decoration: none; color: inherit; transition: var(--transition); }
         ul { list-style: none; }
-
+ 
         .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 var(--space-md); }
         .section-padding { padding: var(--space-xl) 0; }
-
+ 
         /* ── HEADER ── */
         .header {
             position: fixed; top: 1rem; left: 50%; transform: translateX(-50%);
@@ -40,7 +41,7 @@
         .header__menu-toggle { display: none; }
         .header__hamburger { display: flex; flex-direction: column; gap: 5px; cursor: pointer; z-index: 1001; }
         .header__hamburger span { width: 25px; height: 3px; background-color: var(--text-light); transition: var(--transition); display: block; }
-
+ 
         .nav {
             position: absolute; top: calc(100% + 10px); left: 0; width: 100%;
             background: var(--bg-card); border: var(--border-card); border-radius: var(--radius);
@@ -50,7 +51,7 @@
         .nav__list { display: flex; flex-direction: column; gap: 1rem; }
         .nav__link { font-weight: 500; color: var(--text-light); }
         .nav__link:hover { color: var(--color-primary); }
-
+ 
         .btn { display: inline-block; padding: 0.75rem 1.5rem; border-radius: 30px; font-weight: 600; text-align: center; cursor: pointer; transition: var(--transition); font-family: var(--font-family); }
         .btn--primary { background-color: #fff; color: #000; border: 2px solid #fff; }
         .btn--primary:hover { background-color: #e2e8f0; border-color: #e2e8f0; }
@@ -58,7 +59,7 @@
         .btn--outline:hover { border-color: var(--color-primary); color: var(--color-primary); }
         .btn--teal { background-color: var(--color-primary); color: #fff; border: 2px solid var(--color-primary); }
         .btn--teal:hover { background-color: var(--color-primary-hover); border-color: var(--color-primary-hover); }
-
+ 
         /* ── HERO ── */
         .hero {
             padding-top: 170px; padding-bottom: 5rem; text-align: center;
@@ -66,14 +67,6 @@
             min-height: 100vh; display: flex; align-items: center;
         }
         .hero .container { width: 100%; }
-        .hero__badge {
-            display: inline-flex; align-items: center; gap: 0.5rem;
-            background: rgba(13,183,161,0.1); border: 1px solid rgba(13,183,161,0.3);
-            color: var(--color-primary); border-radius: 30px; padding: 0.35rem 1rem;
-            font-size: 0.85rem; font-weight: 600; margin-bottom: 1.75rem;
-        }
-        .hero__badge-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--color-primary); animation: pulse 2s infinite; }
-        @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.3)} }
         .hero__title { font-size: 3rem; line-height: 1.15; color: var(--text-light); margin-bottom: 1.25rem; font-weight: 800; letter-spacing: -1.5px; }
         .hero__title .highlight { color: var(--color-primary); }
         .hero__desc { color: var(--text-main); margin-bottom: 2.5rem; font-size: 1.1rem; max-width: 620px; margin-left: auto; margin-right: auto; }
@@ -82,18 +75,17 @@
         .hero__stat { background: var(--bg-card); border: var(--border-card); border-radius: 14px; padding: 1rem 1.5rem; min-width: 130px; }
         .hero__stat h4 { color: var(--color-primary); font-size: 1.75rem; font-weight: 800; letter-spacing: -1px; }
         .hero__stat p { font-size: 0.8rem; color: var(--text-main); }
-
+ 
         /* ── SECTION HEADER ── */
         .section-header { text-align: center; margin-bottom: 3rem; }
         .section-header__subtitle { display: inline-block; color: var(--color-primary); font-weight: 600; border: 1px solid var(--color-primary); padding: 0.25rem 1rem; border-radius: 20px; margin-bottom: 1rem; font-size: 0.9rem; }
         .section-header__title { font-size: 2.2rem; color: var(--text-light); font-weight: 800; letter-spacing: -0.5px; line-height: 1.3; }
         .section-header__desc { margin-top: 0.75rem; font-size: 1rem; max-width: 580px; margin-left: auto; margin-right: auto; line-height: 1.7; }
-
+ 
         /* ── SERVICES ── */
         .services { background: var(--bg-card); border-top: var(--border-card); border-bottom: var(--border-card); }
         .services__grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
-
-        /* Clickable card */
+ 
         .service-card {
             background: var(--bg-main); border: var(--border-card); border-radius: var(--radius);
             padding: 2rem; transition: var(--transition); position: relative; overflow: hidden;
@@ -112,8 +104,8 @@
         .service-card__desc { font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.25rem; }
         .btn-text { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--color-primary); font-weight: 600; font-size: 0.95rem; transition: var(--transition); }
         .service-card:hover .btn-text { gap: 0.6rem; }
-
-        /* ── PAIN POINTS SECTION ── */
+ 
+        /* ── PAIN POINTS ── */
         .painpoints { background: var(--bg-main); }
         .painpoints__grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
         .pain-card {
@@ -126,7 +118,57 @@
         .pain-card__desc { font-size: 0.92rem; line-height: 1.65; }
         .painpoints__cta { text-align: center; margin-top: 2.5rem; }
         .painpoints__cta p { font-size: 1.1rem; color: var(--text-light); font-weight: 600; margin-bottom: 1.25rem; }
-
+ 
+        /* ── PRICING ── */
+        .pricing { background: var(--bg-main); }
+        .pricing__grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+        .pricing-card {
+            background: var(--bg-card); border: var(--border-card); border-radius: var(--radius);
+            padding: 2rem; transition: var(--transition); position: relative; overflow: hidden;
+        }
+        .pricing-card--popular {
+            border-color: var(--color-primary);
+        }
+        .pricing-card--popular::before {
+            content: '⭐ Paling Populer';
+            position: absolute; top: 0; right: 0;
+            background: var(--color-primary); color: #fff;
+            font-size: 0.75rem; font-weight: 700;
+            padding: 0.4rem 1rem; border-radius: 0 var(--radius) 0 var(--radius);
+        }
+        .pricing-card:hover { transform: translateY(-4px); border-color: rgba(13,183,161,0.4); }
+        .pricing-card__icon { font-size: 2rem; margin-bottom: 1rem; }
+        .pricing-card__name { color: var(--text-light); font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .pricing-card__price { font-size: 2rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.25rem; letter-spacing: -1px; }
+        .pricing-card__price span { font-size: 1rem; font-weight: 500; color: var(--text-main); }
+        .pricing-card__note { font-size: 0.82rem; color: var(--text-main); margin-bottom: 1.5rem; }
+        .pricing-card__features { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1.75rem; }
+        .pricing-card__feature { display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.9rem; }
+        .pricing-card__feature::before { content: '✓'; color: var(--color-primary); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+        .pricing-note { text-align: center; margin-top: 2rem; font-size: 0.9rem; color: var(--text-main); }
+        .pricing-note strong { color: var(--text-light); }
+ 
+        /* ── TESTIMONIALS ── */
+        .testimonials { background: var(--bg-card); border-top: var(--border-card); border-bottom: var(--border-card); }
+        .testimonials__grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+        .testi-card {
+            background: var(--bg-main); border: var(--border-card); border-radius: var(--radius);
+            padding: 1.75rem; transition: var(--transition); position: relative;
+        }
+        .testi-card:hover { border-color: rgba(13,183,161,0.35); transform: translateY(-3px); }
+        .testi-card__stars { color: #f59e0b; font-size: 1rem; margin-bottom: 1rem; letter-spacing: 2px; }
+        .testi-card__text { font-size: 0.95rem; line-height: 1.75; margin-bottom: 1.5rem; font-style: italic; color: #b0c4d4; }
+        .testi-card__quote { position: absolute; top: 1.25rem; right: 1.5rem; font-size: 4rem; color: rgba(13,183,161,0.1); font-family: Georgia, serif; line-height: 1; }
+        .testi-card__author { display: flex; align-items: center; gap: 0.75rem; }
+        .testi-card__avatar {
+            width: 44px; height: 44px; border-radius: 50%;
+            background: linear-gradient(135deg, var(--color-primary), #0a9b88);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.1rem; font-weight: 700; color: #fff; flex-shrink: 0;
+        }
+        .testi-card__name { color: var(--text-light); font-weight: 700; font-size: 0.95rem; }
+        .testi-card__biz { font-size: 0.82rem; color: var(--color-primary); }
+ 
         /* ── ABOUT ── */
         .about__inner { display: grid; grid-template-columns: 1fr; gap: var(--space-lg); align-items: center; }
         .about__image img { border-radius: var(--radius); border: var(--border-card); width: 100%; box-shadow: 0 10px 40px rgba(13,183,161,0.12); }
@@ -137,17 +179,23 @@
         .stat-box:hover { border-color: var(--color-primary); transform: translateY(-4px); }
         .stat-box h4 { color: var(--color-primary); font-size: 1.8rem; margin-bottom: 0.2rem; font-weight: 800; }
         .stat-box p { font-size: 0.85rem; }
-
-        /* ── PORTFOLIO ── */
-        .portfolio { background: var(--bg-card); border-top: var(--border-card); border-bottom: var(--border-card); }
-        .portfolio__grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
-        .portfolio-card { border-radius: var(--radius); overflow: hidden; border: var(--border-card); position: relative; transition: var(--transition); }
-        .portfolio-card:hover { border-color: rgba(13,183,161,0.4); transform: translateY(-4px); }
-        .portfolio-card img { width: 100%; height: 220px; object-fit: cover; transition: transform 0.5s ease; display: block; }
-        .portfolio-card:hover img { transform: scale(1.04); }
-        .portfolio-card__label { position: absolute; top: 1rem; left: 1rem; background: rgba(10,17,24,0.85); backdrop-filter: blur(8px); border: 1px solid rgba(13,183,161,0.3); color: var(--color-primary); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
-        .portfolio-empty { background: var(--bg-main); display: flex; align-items: center; justify-content: center; height: 220px; border-radius: var(--radius); border: var(--border-card); }
-
+ 
+        /* Founder card */
+        .founder-card {
+            display: flex; align-items: center; gap: 1rem;
+            background: var(--bg-main); border: var(--border-card); border-radius: var(--radius);
+            padding: 1.25rem; margin-top: 1.75rem;
+        }
+        .founder-avatar {
+            width: 56px; height: 56px; border-radius: 50%; flex-shrink: 0;
+            background: linear-gradient(135deg, var(--color-primary), #0a3d35);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.5rem; font-weight: 800; color: #fff; border: 2px solid var(--color-primary);
+        }
+        .founder-info__name { color: var(--text-light); font-weight: 700; font-size: 1rem; }
+        .founder-info__title { font-size: 0.82rem; color: var(--color-primary); }
+        .founder-info__desc { font-size: 0.85rem; margin-top: 0.25rem; }
+ 
         /* ── WHY US ── */
         .whyus__grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
         .whyus-card { display: flex; gap: 1.25rem; align-items: flex-start; background: var(--bg-card); border: var(--border-card); border-radius: var(--radius); padding: 1.5rem; transition: var(--transition); }
@@ -155,7 +203,19 @@
         .whyus-icon { font-size: 1.75rem; flex-shrink: 0; min-width: 44px; text-align: center; }
         .whyus-content h4 { color: var(--text-light); font-weight: 700; margin-bottom: 0.3rem; }
         .whyus-content p { font-size: 0.9rem; line-height: 1.65; }
-
+ 
+        /* ── PORTFOLIO ── */
+        .portfolio { background: var(--bg-main); }
+        .portfolio__grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+        .portfolio-card { border-radius: var(--radius); overflow: hidden; border: var(--border-card); position: relative; transition: var(--transition); }
+        .portfolio-card:hover { border-color: rgba(13,183,161,0.4); transform: translateY(-4px); }
+        .portfolio-card img { width: 100%; height: 220px; object-fit: cover; transition: transform 0.5s ease; display: block; }
+        .portfolio-card:hover img { transform: scale(1.04); }
+        .portfolio-card__label { position: absolute; top: 1rem; left: 1rem; background: rgba(10,17,24,0.85); backdrop-filter: blur(8px); border: 1px solid rgba(13,183,161,0.3); color: var(--color-primary); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+        .portfolio-card__info { padding: 1.25rem; background: var(--bg-card); }
+        .portfolio-card__title { color: var(--text-light); font-weight: 700; font-size: 0.95rem; margin-bottom: 0.3rem; }
+        .portfolio-card__desc { font-size: 0.85rem; line-height: 1.6; }
+ 
         /* ── CTA ── */
         .cta-section { background: var(--bg-main); padding-bottom: var(--space-xl); }
         .cta__inner {
@@ -167,8 +227,7 @@
         .cta__logo { display: flex; align-items: center; gap: 12px; font-size: 1.5rem; font-weight: 800; color: var(--text-light); margin-bottom: 1.5rem; }
         .cta__title { font-size: 2rem; color: var(--text-light); max-width: 700px; margin: 0 auto 0.75rem; line-height: 1.3; font-weight: 800; letter-spacing: -0.5px; }
         .cta__subtitle { margin-bottom: 2rem; font-size: 1rem; }
-        .text-highlight { color: var(--color-primary); }
-
+ 
         /* ── FOOTER ── */
         .footer { background-color: #050a0f; color: var(--text-main); padding: var(--space-xl) 0 var(--space-md); border-top: var(--border-card); }
         .footer__inner { display: grid; grid-template-columns: 1fr; gap: var(--space-lg); margin-bottom: var(--space-lg); }
@@ -178,11 +237,11 @@
         .footer__links a:hover { color: var(--color-primary); }
         .footer__contact p { display: flex; align-items: center; gap: 8px; margin-bottom: 0.5rem; font-size: 0.95rem; }
         .footer__bottom { text-align: center; padding-top: 1rem; border-top: var(--border-card); font-size: 0.9rem; }
-
+ 
         /* ── REVEAL ── */
         .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.65s ease, transform 0.65s ease; }
         .reveal.visible { opacity: 1; transform: translateY(0); }
-
+ 
         /* ── RESPONSIVE ── */
         @media (min-width: 768px) {
             .hero__title { font-size: 4rem; }
@@ -193,6 +252,8 @@
             .painpoints__grid { grid-template-columns: repeat(2, 1fr); }
             .about__inner { grid-template-columns: 1fr 1fr; gap: 4rem; }
             .footer__inner { grid-template-columns: repeat(3, 1fr); }
+            .testimonials__grid { grid-template-columns: repeat(2, 1fr); }
+            .pricing__grid { grid-template-columns: repeat(2, 1fr); }
         }
         @media (min-width: 1024px) {
             .header__hamburger { display: none; }
@@ -203,7 +264,9 @@
             .nav__list { flex-direction: row; gap: var(--space-lg); margin: 0 auto; }
             .hero__title { font-size: 4.75rem; }
             .services__grid { grid-template-columns: repeat(3, 1fr); }
-            .portfolio__grid { grid-template-columns: repeat(3, 1fr); }
+            .portfolio__grid { grid-template-columns: repeat(2, 1fr); }
             .whyus__grid { grid-template-columns: repeat(2, 1fr); }
             .painpoints__grid { grid-template-columns: repeat(2, 1fr); }
+            .testimonials__grid { grid-template-columns: repeat(3, 1fr); }
+            .pricing__grid { grid-template-columns: repeat(3, 1fr); }
         }
